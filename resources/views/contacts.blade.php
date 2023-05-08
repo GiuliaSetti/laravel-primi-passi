@@ -9,13 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
-
+    
     <!-- css -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
-    <title>Laravel Homepage - First Try</title>
+    <title>Contacts</title>
 </head>
-<bod class="debug">
+<body class="debug">
 
         <nav>
 
@@ -39,7 +39,7 @@
 
         </nav>
 
-    <h1>{{$hello}} {{$world}}</h1>
+    <h1>{{$title}}</h1>
     
-</bod>
+</body>
 </html>

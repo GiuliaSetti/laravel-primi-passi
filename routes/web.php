@@ -15,9 +15,48 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-
+    //hello world
     $hello = 'Hello';
     $world = 'World!';
 
-    return view('home', compact('hello', 'world'));
-});
+    //links per la navbar
+    $links = [
+        'home',
+        'about us',
+        'contacts',
+    ];
+
+    return view('home', compact('hello', 'world', 'links'));
+})->name('home');
+
+// about us 
+Route::get('/about', function () {
+
+    //titolo pagina
+    $title = 'About Us';
+
+    //links per la navbar
+    $links = [
+        'home',
+        'about us',
+        'contacts',
+    ];
+
+    return view('about', compact('title', 'links'));
+})->name('about us');
+
+//contacts
+Route::get('/contacts', function () {
+
+    //titolo pagina
+    $title = 'Contacts';
+
+    //links per la navbar
+    $links = [
+        'home',
+        'about us',
+        'contacts',
+    ];
+
+    return view('contacts', compact('title', 'links'));
+})->name('contacts');
